@@ -1,0 +1,6 @@
+{
+  "name": "Behaviour Driven Rogue Device Detection",
+  "description": "Interactive virtual network security simulation demonstrating behaviour-driven rogue device detection, real-time risk scoring, and automated QoS rate-limiting mitigation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

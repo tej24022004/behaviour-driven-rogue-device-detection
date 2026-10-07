@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #0B1120;
+    color: #F1F5F9;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes packetFlow {
+  0% {
+    stroke-dashoffset: 48;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes packetFlowReverse {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 48;
+  }
+}
+
+.animate-packet-normal {
+  stroke-dasharray: 6 18;
+  animation: packetFlow 1.4s linear infinite;
+}
+
+.animate-packet-fast {
+  stroke-dasharray: 8 10;
+  animation: packetFlow 0.38s linear infinite;
+}
+
+.animate-packet-throttled {
+  stroke-dasharray: 4 20;
+  animation: packetFlow 1.8s linear infinite;
+}
+
